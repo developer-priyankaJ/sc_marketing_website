@@ -1,0 +1,335 @@
+.content-area{
+  min-height:700px;
+}
+.getstarted{
+  height:90%;
+  position:absolute;
+  width:100%;
+}
+.getcompany{
+  height:80%;
+}
+.confirmemail{
+  height:100%;
+  position: absolute;
+    width: 100%;
+}
+.passwordscreen{
+  height:95%;
+}
+.logo-small{
+  display:inline-block;
+  background-image: url("../../assets/images/new_trans_light.png");
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 40px;
+  padding: 5px 5px;
+}
+.plain-header{
+  height:60px;
+  background-color: white;
+  text-align:center;
+  .logo{
+    display:inline-block;
+    background-image: url("../../assets/images/new_trans_light.png");
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 40px;
+    padding: 5px 5px;
+  }
+}
+.half-width{
+  width:50%;
+}
+.getcompany-container{
+    width:100%;
+    height:100%;
+    min-height:700px;
+    margin-top:60px;
+    .other-side{
+      background-color: #f8f8f8;
+      justify-content: flex-start;
+      flex: 1;
+      width:60%;
+      height: 100%;
+      position: relative;
+      align-items: center;
+      overflow:hidden;
+      min-height:650px;
+      padding-top:60px;
+      .app-mock{
+        height: 346px;
+        width: 400px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center left;
+        position: relative;
+        background-image: url("../../assets/images/app_mock.png");
+        margin-right: 60px;
+        margin-left: 45px;
+        display:flex;
+        align-items:center;
+      }
+    }
+    .first-side{
+      flex: 1;
+      height: 100%;
+      opacity: 1;
+      vertical-align:top;
+      position: relative;
+      display: inline-block;
+      width:40%;
+      align-items: center;
+      background-color: #fff;
+      justify-content: flex-end;
+      .card-container{
+        margin: 60px 20px 0 20px;
+        display:flex;
+        flex-direction:column;
+        align-items: flex-end;
+
+        .txt{
+          margin-bottom:0;
+        }
+        .inputbox{
+          padding: 10px;
+          margin: 10px;
+          border-radius:6px;
+          border:1px solid #ccc;;
+          margin-left:20px;
+          width:80%;
+        }
+        .button{
+          margin: 20px 20px;
+        }
+        .card-heading{
+          color: #1d1c1d;
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 1.2143;
+          margin-bottom: .5rem!important;
+          text-align:center;
+          margin-right:10%;
+        }
+        .card-row{
+          text-decoration: none;
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          border-left: none;
+          border-right: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          clear: both;
+          cursor: pointer;
+          width: 100%;
+          padding: 1.25rem 0;
+          line-height: 1.2rem;
+          background: 0 0;
+          &.bm-type_margin{
+             margin-top: 1.5rem!important;
+          }
+        }
+      }
+    }
+
+}
+.getstarted-container,.passwordscreen-container,.confirmemail-container{
+  background-color: #f8f8f8;
+  height:100%;
+  .card-container{
+    background-color:white;
+    min-height:300px;
+    position: absolute;
+  	top:0;
+    width: 60%;
+  	left: 0;
+  	right: 0;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 30px 50px 0;
+    margin-top: 80px;
+    box-shadow: 0 10px 25px #ddd;
+    max-width: 528px;
+    &.img-arrow{
+      background-image: url("../../assets/images/conf-code.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 355px;
+    }
+    &.bm-page_company{
+      min-height:350px;
+    }
+    &.bm-page_confirmemail{
+      width:60%;
+      min-height:500px;
+      margin-top: 100px;
+    }
+    &.bm-page_password{
+      min-height:400px;
+      min-width:500px;
+    }
+    .txt{
+      margin-bottom:0;
+    }
+    .inputbox{
+      padding: 10px;
+      margin: 10px;
+      margin-left:20px;
+    }
+    .button{
+      margin:20px 10px;
+    }
+    .card-heading{
+      color: #1d1c1d;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.2143;
+      margin-bottom: .5rem!important;
+    }
+    .card-row{
+      text-decoration: none;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      border-left: none;
+      border-right: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      clear: both;
+      cursor: pointer;
+      width: 100%;
+      padding: 1.25rem 0;
+      line-height: 1.2rem;
+      background: 0 0;
+      &.bm-type_margin{
+         margin-top: 1.5rem!important;
+      }
+      .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+      .right-arrow{
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      .card-row-text{
+        flex-grow: 2;
+        margin-top: .3rem;
+        line-height: 1.46668;
+        .head{
+          width: auto;
+          color: #1d1c1d;
+          font-weight: 700;
+          float: left;
+          font-size: 15px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          text-align: left;
+        }
+        .descrip{
+          text-align: left;
+          clear: left;
+          float: left;
+          color: #616061;
+          font-size: 13px;
+        }
+
+      }
+    }
+  }
+}
+.icon-scopehub{
+  display:inline-block;
+  background-image: url("../../assets/images/logo_huge.png");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 40px;
+  padding: 5px 5px;
+}
+.team-icon{
+  align-self: flex-start;
+  margin-top: 10px;
+  .bm-team_icon{
+    background: #009941;
+    border-radius: .25rem;
+    text-align: center;
+    color: #fff;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+}
+.error-box{
+  width:100%;
+  height:50px;
+  background: bisque;
+  border: 1px solid darkSalmon;
+  border-radius: 2px;
+  .error-sign{
+    margin:13px;
+    .sign{
+      color:red;
+      margin-right:10px;
+      margin-left:10px;
+    }
+  }
+}
+.code-input{
+   text-align: center;
+   line-height: 60px;
+   font-size: 25px;
+   border: solid 1px #ccc;
+   box-shadow: 0 0 3px #ccc inset;
+   outline: none;
+   width: 12%;
+   transition: all .2s ease-in-out;
+   &.bm-type_first{
+     border-radius: 6px 0px 0px 6px;
+   }
+   &.bm-type_last{
+     border-radius: 0px 6px 6px 0px;
+   }
+   &:focus {
+     border-color: #ccc;
+     box-shadow: 0 0 5px #b2dbf2 inset;
+   }
+   &::selection {
+     background: transparent;
+   }
+}
+.icon-plus.far{
+    font-size:22px;
+    padding:5px;
+}
+@media screen and (min-width: 67.8125rem){
+  .getstarted-container,.passwordscreen-container,.confirmemail-container{
+    .card-container{
+      width:28%;
+      &.bm-page_confirmemail{
+        width:27%;
+        margin-top: 100px;
+      }
+    }
+  }
+  .getcompany-container{
+    .other-side{
+      width:50%;
+    }
+    .first-side{
+      width:50%;
+      .card-container{
+        margin-right: 45px;
+        margin-top: 60px;
+        .inputbox{
+          width:80%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,348 @@
+.layover{
+  width:100%;
+  height:100%;
+  border: dashed grey 4px;
+                background-color: rgba(255,255,255,.8);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 9999
+}
+.required{
+        color:red;
+    }
+@media screen and (min-width: 25rem){
+  .contactUs-container{
+    .contactUs-content{
+      .main{
+          .content{
+            h2{
+              font-size: calc(2rem + (24 * (100vw - 400px)/ 624));
+            }
+            p{
+              font-size: calc(1.125rem + (0 * (100vw - 400px)/ 624));
+            }
+          }
+        }
+        .form-container{
+          .wrapper{
+            .box-container{
+              .c-form{
+                .c-form-field{
+                    .c-form__label {
+                      font-size: calc(.875rem + (0 * (100vw - 400px)/ 624));
+                    }
+                      .c-form__input{
+                        font-size: calc(1rem + (0 * (100vw - 400px)/ 624));
+                      }
+                  }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+.contactUs-container{
+  .support-content{
+    overflow: hidden;
+    padding: 3rem 0;
+    border: none;
+  }
+  .contactUs-content{
+    flex: 1 1 0;
+
+    .main{
+          height: 370px;
+          &.bm-type_sales{
+              height: 370px;
+              min-height: 400px;
+          }
+          margin-bottom: 0;
+          max-height: 460px;
+          padding-top: 4rem;
+          padding-bottom: 0;
+          background: #2986BE;
+          background-image: linear-gradient(-10deg, #31BE34 5%, #009945 45%);
+          background-size: cover;
+          background-position: center bottom;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          .content{
+            max-width: 54rem;
+            margin: 0 auto;
+            padding: 0 8vw;
+            h2{
+              color: #fff;
+              max-width: 14em;
+              font-weight: 700;
+              line-height: 1.10714286;
+              letter-spacing: -1px;
+              font-size: 2rem;
+              margin-bottom: 1rem;
+            }
+            p{
+              margin: 0;
+              color: #fff;
+              font-weight: 700;
+              line-height: 1.44444444;
+              letter-spacing: normal;
+              font-size: 1.125rem;
+              &.bm-type_email{
+                font-weight:400;
+              }
+            }
+          }
+      }
+      .form-container{
+        border: none;
+        overflow: visible;
+        margin-top: 0;
+        overflow: hidden;
+        padding: 3rem 0;
+        .wrapper{
+          max-width: 683px;
+          padding: 0;
+          margin: 0 auto;
+          .box-container{
+            display: inline-block;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 2rem rgba(0,0,0,.1);
+            width: 90%;
+            .c-form{
+              display: flex;
+              flex-direction: column;
+              margin-top: 0;
+              margin-bottom: 0;
+              max-width: 100%;
+                .error-message{
+                      margin-bottom: 1.5rem;
+                }
+                .c-form-field{
+                    display: flex;
+                    flex-direction: column;
+                    .error{
+                      color:#e01e5a;
+                      margin-bottom:5px;
+                    }
+                    .select__control{
+                      padding: 10px;
+                      border-color: #666;
+                    }
+                    .c-form__checkbox{
+                      display: block;
+                      position: relative;
+                      padding-left: 35px;
+                      margin-bottom: 12px;
+                      cursor: pointer;
+                      font-size: 22px;
+                      -webkit-user-select: none;
+                      -moz-user-select: none;
+                      -ms-user-select: none;
+                      user-select: none;
+                      input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                      }
+                      .checkmark {
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                        height: 20px;
+                        width: 20px;
+                        background-color: #eee;
+                      }
+                        &:hover input ~ .checkmark {
+                          background-color: #ccc;
+                        }
+
+                        /* When the checkbox is checked, add a blue background */
+                        input:checked ~ .checkmark {
+                          background-color: #009945;
+                        }
+
+                        /* Create the checkmark/indicator (hidden when not checked) */
+                        .checkmark:after {
+                          content: "";
+                          position: absolute;
+                          display: none;
+                        }
+
+                        /* Show the checkmark when checked */
+                        input:checked ~ .checkmark:after {
+                          display: block;
+                        }
+
+                        /* Style the checkmark/indicator */
+                        .checkmark:after {
+                          left: 6px;
+                          top: 2px;
+                          width: 5px;
+                          height: 10px;
+                          border: solid white;
+                          border-width: 0 3px 3px 0;
+                          -webkit-transform: rotate(45deg);
+                          -ms-transform: rotate(45deg);
+                          transform: rotate(45deg);
+                        }
+
+                    }
+                    hr{
+                      margin:30px 0;
+                      width:100%;
+                      height: 1px;
+                      border: 0; border-top: 1px solid #ccc;
+                    }
+                    .c-form__action{
+                      margin: 1.5rem 0 !important;
+                      align-self: flex-start;
+                      border-radius:6px;
+                      padding: 18px 40px 30px 40px;
+                      width:100%;
+                    }
+                    .c-form__label {
+                        font-size: 1rem;
+                        display: inline-block;
+                        margin: .5rem 0;
+                        font-weight: 700;
+                        line-height: 1.28571429;
+                        letter-spacing: .2px;
+                        width:100%;
+                    }
+                    .c-form__input{
+                      margin-bottom: .5rem;
+                      font-size: 1rem;
+                      background-color: #fff;
+                      color: #454545;
+                      text-decoration: none;
+                      font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+                      font-weight: 400;
+                      line-height: 1.25;
+                      letter-spacing: normal;
+                      font-size: 1rem;
+                      border: 1px solid #696969;
+                      border-radius: 4px;
+                      box-shadow: none;
+                      padding: 1.15rem 1rem;
+                      width:94%;
+                      display: inline-block;
+                      &.error{
+                        border: 1px solid #e01e5a;
+                      }
+                    }
+                }
+              }
+
+          }
+        }
+      }
+  }
+}
+
+@media screen and (min-width: 48rem){
+  .contactUs-container{
+    .support-content{
+      padding-top: 0;
+      padding-bottom: 5rem;
+    }
+    .contactUs-content{
+      flex: 1 1 0;
+
+      .main{
+          padding: 4rem 0;
+            &.bm-type_sales{
+                padding:  0;
+            }
+          .content{
+            padding: 0 4vw;
+            h2{
+                  margin: 0 auto 1.5rem;
+
+            }
+          }
+        }
+      .form-container{
+         margin-top: -10rem;
+
+         padding: 4rem 0 4rem 0;
+         .wrapper{
+           .box-container{
+             .c-form{
+               .c-form-field{
+                   .c-form__label {
+                     font-size: .875rem;
+                   }
+                   .c-form__action{
+                      display: inline-block;
+                      white-space: nowrap;
+                      flex-basis: auto;
+                      width: auto;
+                   }
+                 }
+             }
+           }
+         }
+      }
+      }
+    }
+}
+@media screen and (min-width: 64rem){
+  .contactUs-container{
+    .contactUs-content{
+      .main{
+          .content{
+            h2{
+              font-size: 3.5rem;
+              &.bm-type_sales{
+                font-size: 2rem;
+              }
+            }
+            p{
+                font-size: 1.125rem;
+                &.bm-type_email{
+                  font-weight:400;
+                }
+                &.bm-type_sales{
+                  max-width: 38.5rem;
+                  font-weight:400;
+                }
+            }
+          }
+        }
+        .form-container{
+           .wrapper{
+             .box-container{
+               .c-form{
+                 .c-form-field{
+                     .c-form__action{
+                        font-size: .875rem;
+                     }
+                   }
+               }
+             }
+           }
+        }
+      }
+    }
+}
+@media screen and (min-width: 84.875rem){
+  .contactUs-container{
+    .contactUs-content{
+      .main{
+          .content{
+            max-width: 76.875rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+}

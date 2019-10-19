@@ -1,0 +1,43 @@
+{
+  "name": "scopehub",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-cookie": "^4.0.0",
+    "react-css-loaders": "0.0.5",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "react-select": "^3.0.4",
+    "react-tabs": "^3.0.0",
+    "recaptcha-v3": "^1.5.0"
+  },
+  "scripts": {
+    "build_dev": "set REACT_APP_PROJECT_ENV=DEV&& react-scripts build",
+    "build_qa": "set REACT_APP_PROJECT_ENV=QA&& react-scripts build",
+    "build_prod": "set REACT_APP_PROJECT_ENV=PROD&& react-scripts build",
+    "build": "set REACT_APP_PROJECT_ENV=DEV&& react-scripts build",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {},
+  "devDependencies": {
+    "jsencrypt": "^3.0.0-rc.1",
+    "material-ui": "^0.20.2",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dd-menu": "^2.0.2",
+    "react-dropzone": "^10.1.5",
+    "react-redux": "^7.1.0",
+    "react-responsive-modal": "^4.0.1",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "superagent": "^5.1.0"
+  }
+}

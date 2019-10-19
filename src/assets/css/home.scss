@@ -1,0 +1,178 @@
+.supply-info{
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0px 30px 0px 30px;
+    margin-left: -30px;
+    margin-right: -30px;
+    min-height:600px;
+    .supply-container{
+      padding-left: 0;
+      padding-right: 0;
+      max-width:1170px;
+      margin: 0 auto;
+      width:100%;
+      height:100%;
+      position:relative;
+      .sub-title{
+        line-height: 1.44444444;
+        margin: 0 20px 25px 20px;
+        color: #545454;
+      }
+    }
+}
+.homepage-content{
+  height:100%;
+}
+.home-intro{
+  min-height:520px;
+  padding: 92px 0 50px 0;
+  overflow-x: hidden;
+  .homeContainer{
+    height:100%;
+    min-height:520px;
+    margin:0 auto;
+    .content{
+      height:100%;
+      max-width:1280px;
+      min-height:520px;
+      margin: 0 auto;
+      width:100%;
+      position:relative;
+      padding-left: 0;
+      padding-right: 0;
+      .intro-part-1{
+        width:100%;
+        display:flex;
+        align-items:center;
+        min-height:380px;
+        position: relative;
+
+        .intro-img{
+          display:inline-block;
+          background-image: url("../../assets/images/Fig1-1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          max-width: 500px;
+          width:100%;
+          min-height: 268px;
+          float:left;
+          border:none;
+          margin: 0 auto;
+          padding: 5px 5px;
+        }
+      }
+      .intro-part-2{
+      margin: 0 5% 20px 5%;
+
+        .smallsp{
+          font-size: 12px;
+        }
+        .sub-text{
+          float: left;
+          width: 100%;
+          color:#545454;
+          padding-top: 10px;
+        }
+        .group{
+          zoom:1;
+          .left {
+              width:100%;
+              margin-bottom:10px;
+              .left-content{
+                position:relative;
+                color: #545454;
+                font-size:17px;
+              }
+              .email{
+                border: 1px solid #7ac92c;
+                background-color: rgba(255, 255, 255, 0.59) !important;
+                color: #545454;
+                font-size: 19px;
+                width:93%;
+                height: 60px;
+                padding-top: 0;
+                padding-left:20px;
+                padding-bottom: 0;
+              }
+          }
+          .right {
+              width:100%;
+              .right-content{
+                margin:0;
+              }
+              .submit-button{
+                background: #009941;
+                font-weight: 700;
+                letter-spacing: 2px;
+                font-style:normal;
+                padding: 13px 29px;
+                line-height: 17px;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #ffffff;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2bc12f, endColorstr=#2bc12f);
+                border-width: 0px;
+                border-style: solid;
+                border-color: #ffffff;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                -ms-transition: all .2s;
+                -o-transition: all .2s;
+                -webkit-border-radius: 0;
+                height: 61px;
+                &:hover{
+                  background:#027232;
+                }
+              }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 67.8125rem){
+  .home-intro .homeContainer {
+      .content{
+        .intro-part-1{
+            width: 48%;
+            margin-right: 5%;;
+            float:left;
+            min-height:500px;
+        }
+        .intro-part-2{
+            width: 46%;
+            margin: 0 0 20px 0;
+            position: relative;
+            float: left;
+            .group{
+              zoom:1;
+              .left {
+                float: left;
+                width: 57.5%;
+              }
+              .right{
+                float: left;
+                line-height: 32px;
+                display:inline-block;
+                width:42.5%;
+              }
+            }
+        }
+      }
+  }
+  .supply-info{
+    .supply-container{
+      .sub-title{
+        margin: 0 0 25px 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 84.875rem){
+  .home-intro .homeContainer {
+      max-width: 76.875rem;
+      padding: 0;
+  }
+}

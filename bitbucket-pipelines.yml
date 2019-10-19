@@ -1,0 +1,54 @@
+# Set up by adding these environment variables:
+# AWS_ACCESS_KEY_ID
+# AWS_SECRET_ACCESS_KEY (set as Secured)
+# AWS_REGION
+# AWS_CODEDEPLOY_APP
+# AWS_CODEDEPLOY_GROUP
+# AWS_S3_BUCKET
+
+image: node:10.15.3
+# Only do a full deployment from the master branch
+pipelines:
+  branches:
+    master:
+    - step:
+        name: QA Build
+        script:
+          - npm cache clean --force
+          - npm install          
+          - npm run build_qa
+        artifacts:
+          - build/**
+    - step:
+        name: Deploy to QA
+        image: python:3.5.7
+        deployment: QA
+        script:
+          - apt-get update
+          - apt-get install -y zip
+          - pip install boto3==1.3.0
+          - cp -R build/* ./
+          - rm -rf build
+          - zip -r /tmp/artifact.zip ./*
+          - python scripts/codedeploy_qa_deploy.py
+    - step:
+        name: PROD Build
+        script:
+          - npm cache clean --force
+          - npm install          
+          - npm run build_prod
+        artifacts:
+          - build/**
+    - step:
+        name: Deploy to Production
+        image: python:3.5.7
+        deployment: Production
+        trigger: manual
+        script:
+          - apt-get update
+          - apt-get install -y zip
+          - pip install boto3==1.3.0
+          - cp -R build/* ./
+          - rm -rf build
+          - zip -r /tmp/artifact.zip ./*
+          - python scripts/codedeploy_prod_deploy.py
